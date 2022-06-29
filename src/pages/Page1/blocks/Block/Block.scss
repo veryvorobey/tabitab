@@ -1,5 +1,146 @@
 .Block {
-  border: 1px solid;
-  padding: 4px;
-  margin: 4px;
+  display: flex;
+}
+
+.BlockInputName{
+  display: flex;
+  flex-direction: column;
+  margin-top: 133px;
+  margin-left: 145px;
+}
+
+.BlockInputNameTitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.BlockInputNameInfo {
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 126px;
+  color: #585757;
+}
+
+.BlockInputNameForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+}
+
+.BlockInputNameFormName {
+  padding: 9px 15px;
+  margin-top: 30px;
+  border: rgba(219, 219, 219, 1) 1px solid;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 126px;
+}
+
+.BlockInputNameFormName:nth-child(2) {
+  margin-top: 10px;
+}
+
+.BlockInputNameFormName:hover {
+  border-color: rgba(75, 76, 77, 1);
+}
+
+.BlockInputNameFormName:focus {
+  border-color: rgba(22, 116, 120, 1);
+}
+
+.BlockInputNameFormButton {
+  margin-top: 20px;
+  width: 129px;
+  border-radius: 6px;
+  padding: 11px 16px;
+  background-color: rgba(36, 175, 181, 1);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  border: 1px rgba(36, 175, 181, 1);
+  color: white;
+}
+
+.BlockInputNameFormButton:hover {
+  background-color: #167478;
+}
+.BlockInputNameFormButton:active {
+  background-color: #073537;
+}
+
+.BlockInputNameFormInfo {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(150, 150, 150);
+  margin-right: 230px;
+}
+
+.BlockSafari {
+  margin-top: 84px;
+}
+
+.BlockInputNameInfoMobile {
+  display: none;
+}
+
+@media screen and (max-width: 815px) {
+  .Block {
+    flex-direction: column-reverse;
+  }
+
+  .BlockSafari {
+    margin-top: 40px;
+    margin-left: 15px;
+    text-align: right;
+  }
+
+  .BlockInputName{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  .BlockInputNameTitle {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .BlockInputNameInfo {
+    display: none;
+  }
+
+  .BlockInputNameInfoMobile {
+    display: block;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 110px;
+    color: #585757;
+    margin-top: 20px;
+  }
+
+  .BlockInputNameForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BlockInputNameFormName {
+    margin-right: 15px;
+  }
+
+  .BlockInputNameFormButton:hover {
+    background-color: #167478;
+  }
+  .BlockInputNameFormButton:active {
+    background-color: #073537;
+  }
+
+  .BlockInputNameFormInfo {
+    color: rgba(150, 150, 150);
+    margin-right: 150px;
+  }
 }
