@@ -17,7 +17,7 @@ function Block() {
           <div className="BlockInputNameForm">
               <input className="BlockInputNameFormName" placeholder="Name">
               </input>
-              <input type="text" className="BlockInputNameFormName" placeholder="Email">
+              <input className="BlockInputNameFormName" placeholder="Email">
                   </input>
               <input type="button" className="BlockInputNameFormButton" value="Subscribe">
               </input>
