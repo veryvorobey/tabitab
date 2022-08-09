@@ -26,7 +26,7 @@ function Block() {
           </span>
         </div>
       </div>
-      <img src={safari} className="BlockSafari" alt={IMAGE_ALT}/>
+      <img src={safari} className="Block-Safari" alt={IMAGE_ALT}/>
     </div>
   );
 }
