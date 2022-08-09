@@ -10,6 +10,9 @@ function Description() {
             <div className="Description-over92computer">
                 Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.
             </div>
+            <div className="Description-such-software">
+                 Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it. Even if you have an anti-spyware tool your Windows Registry might be broken.
+            </div>
         </div>
     );
 }
