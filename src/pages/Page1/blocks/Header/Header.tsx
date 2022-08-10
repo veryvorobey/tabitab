@@ -14,10 +14,12 @@ function Header() {
         <span className="Header-link">Page4</span>
         <span className="Header-link">Page5</span>
       </div>
-      <div className="HeaderMenu">
+      <div className="HeaderMenuWrap">
+        <div className="HeaderMenu">
           <div className="HeaderMenuLine"></div>
           <div className="HeaderMenuLine"></div>
           <div className="HeaderMenuLine"></div>
+        </div>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@
   font-size: 15px;
   line-height: 22px;
   margin-right: 72px;
+  cursor: pointer;
 }
 
 .Header-link:nth-child(5) {
@@ -45,11 +46,14 @@
     display: none;
   }
 
-  .HeaderMenu {
-    display: block;
+  .HeaderMenuWrap{
     margin-top: 28px;
     margin-right: 18px;
-    // добавить cursor: pointer;
+  }
+
+  .HeaderMenu {
+    display: block;
+    cursor: pointer;
   }
 
   .HeaderMenuLine {
