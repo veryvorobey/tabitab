@@ -1,0 +1,141 @@
+.Heading {
+  display: flex;
+}
+
+.HeadingForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 133px;
+  margin-left: 145px;
+}
+
+.HeadingTitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  padding-bottom: 20px;
+}
+
+.Heading-description {
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 126px;
+  color: #585757;
+}
+
+.Heading-input {
+  margin-top: 30px;
+  padding: 9px 15px;
+  border: rgba(219, 219, 219, 1) 1px solid;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 126px;
+}
+
+.Heading-input:nth-child(2) {
+  margin-top: 10px;
+}
+
+.Heading-input:hover {
+  border-color: rgba(75, 76, 77, 1);
+}
+
+.Heading-input:focus {
+  border-color: rgba(22, 116, 120, 1);
+}
+
+.Heading-button {
+  margin-top: 20px;
+  width: 129px;
+  border-radius: 6px;
+  padding: 11px 16px;
+  background-color: rgba(36, 175, 181, 1);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  border: 1px rgba(36, 175, 181, 1);
+  color: white;
+}
+
+.Heading-button:hover {
+  background-color: #167478;
+}
+
+.Heading-button:active {
+  background-color: #073537;
+}
+
+.Heading-formInfo {
+  font-family: "Inter";
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(150, 150, 150);
+  margin-bottom: 145px;
+}
+
+.Heading-image {
+  margin-top: 84px;
+}
+
+.HeadingInputNameForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.Heading-Input-Mobile {
+  display: none;
+}
+
+@media screen and (max-width: 815px) {
+  .Heading {
+    flex-direction: column-reverse;
+  }
+
+  .Heading-image {
+    margin-top: 40px;
+    margin-left: 15px;
+    text-align: right;
+  }
+
+  .HeadingForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  .HeadingTitle {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .Heading-description {
+    display: none;
+  }
+
+  .Heading-Input-Mobile {
+    display: block;
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 15px;
+    color: #585757;
+  }
+
+  .HeadingInputNameForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Heading-input {
+    margin-right: 15px;
+  }
+
+  .Heading-formInfo {
+    color: rgba(150, 150, 150);
+    padding-right: 15px;
+    margin-bottom: 45px;
+  }
+}
