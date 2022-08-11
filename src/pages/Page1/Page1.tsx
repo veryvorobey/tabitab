@@ -8,8 +8,8 @@ function Page1() {
   return (
     <div className="Page1">
       <Header/>
-        <Heading/>
-            <Description/>
+      <Heading/>
+      <Description/>
     </div>
   );
 }

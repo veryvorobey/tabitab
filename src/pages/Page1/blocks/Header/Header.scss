@@ -1,17 +1,13 @@
 .Header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 88px;
 }
 
 .Header-logo {
-  margin-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-.Header-links {
-  margin-right: 30px;
-  margin-top: 33px;
+  height: 48px;
 }
 
 .Header-link {
@@ -22,41 +18,39 @@
   cursor: pointer;
 }
 
-.Header-link:nth-child(5) {
+.Header-link:last-child {
   margin-right: 0;
 }
 
-.Header-link:hover{
+.Header-link:hover {
   color: rgba(22, 116, 120, 1);
   border-bottom: 1px rgba(22, 116, 120, 1) solid;
 }
 
-.HeaderMenu {
+.Header-menu {
   display: none;
 }
 
 @media screen and (max-width: 815px) {
+  .Header {
+    height: 68px;
+    padding: 0 20px;
+  }
+
   .Header-logo {
-    margin-top: 16px;
-    margin-left: 20px;
-    margin-bottom: 16px;
+    height: 36px;
   }
 
   .Header-link {
     display: none;
   }
 
-  .HeaderMenuWrap{
-    margin-top: 28px;
-    margin-right: 18px;
-  }
-
-  .HeaderMenu {
+  .Header-menu {
     display: block;
     cursor: pointer;
   }
 
-  .HeaderMenuLine {
+  .Header-menuLine {
     display: block;
     background-color: #969696;
     height: 2px;
@@ -65,15 +59,11 @@
     border-radius: 50px;
   }
 
-  .HeaderMenu:hover > .HeaderMenuLine {
+  .Header-menu:hover > .Header-menuLine {
     background-color: rgba(22, 116, 120, 1);
   }
 
-  .HeaderMenuLine:nth-child(3) {
-    margin-bottom: 0;
-  }
-
-  .HeaderMenuLine:nth-child(3) {
+  .Header-menuLine:last-child {
     margin-bottom: 0;
   }
 }

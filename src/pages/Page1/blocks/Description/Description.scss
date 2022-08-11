@@ -11,30 +11,30 @@
   color: #585757;
 }
 
-.Description-Graphics {
+.Description-image {
   margin-top: 110px;
 }
 
-.Description-over92computer {
+.Description-desktopText {
   margin-top: 30px;
   margin-bottom: 104px;
-  padding: 0 360px;
+  max-width: 730px;
 }
 
-.Description-such-software {
+.Description-mobileText {
   display: none;
 }
 
 @media screen and (max-width: 815px) {
-  .Description-Graphics {
+  .Description-image {
     margin-top: 40px;
   }
 
-  .Description-over92computer {
+  .Description-desktopText {
     display: none;
   }
 
-  .Description-such-software {
+  .Description-mobileText {
     display: block;
     margin-top: 30px;
     margin-bottom: 44px;

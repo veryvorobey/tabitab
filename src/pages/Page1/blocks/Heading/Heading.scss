@@ -1,40 +1,59 @@
 .Heading {
   display: flex;
+  font-family: "Inter"; // если у детей шрифт одинаковый,
+  // его достаточно его задать у родителя (наследование)
+  overflow: hidden; // чтобы не появлялся горизонтальный скролл от того,
+  // что с картинкой блок больше ширины страницы на мобилках
 }
 
-.HeadingForm {
+.Heading-form {
+  margin-top: 133px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.Heading-formContent {
   display: flex;
   flex-direction: column;
-  margin-top: 133px;
-  margin-left: 145px;
+  width: 440px;
 }
 
-.HeadingTitle {
+.Heading-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
   padding-bottom: 20px;
 }
 
-.Heading-description {
+.Heading-mobileDescription {
+  display: none;
+}
+
+.Heading-desktopDescription {
   font-size: 20px;
   line-height: 30px;
-  padding-right: 126px;
   color: #585757;
+  margin-bottom: 30px;
 }
 
 .Heading-input {
-  margin-top: 30px;
   padding: 9px 15px;
   border: rgba(219, 219, 219, 1) 1px solid;
   border-radius: 6px;
   font-size: 20px;
   line-height: 30px;
-  margin-right: 126px;
+  margin-bottom: 10px;
 }
 
-.Heading-input:nth-child(2) {
-  margin-top: 10px;
+.Heading-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.Heading-input:last-child {
+  margin-bottom: 0;
 }
 
 .Heading-input:hover {
@@ -56,6 +75,7 @@
   font-weight: 600;
   border: 1px rgba(36, 175, 181, 1);
   color: white;
+  cursor: pointer;
 }
 
 .Heading-button:hover {
@@ -67,7 +87,6 @@
 }
 
 .Heading-formInfo {
-  font-family: "Inter";
   margin-top: 20px;
   font-size: 13px;
   line-height: 18px;
@@ -77,6 +96,11 @@
 
 .Heading-image {
   margin-top: 84px;
+  width: 50%;
+  height: 576px;
+  object-fit: cover; // чтобы изображение было по высоте элемента
+  object-position: left; // чтобы левый верхний угол был виден,
+  // а при уменьшении экрана, т.е. при необходимости, скрывалась правая часть картинки
 }
 
 .HeadingInputNameForm {
@@ -84,9 +108,6 @@
   flex-direction: column;
 }
 
-.Heading-Input-Mobile {
-  display: none;
-}
 
 @media screen and (max-width: 815px) {
   .Heading {
@@ -96,41 +117,42 @@
   .Heading-image {
     margin-top: 40px;
     margin-left: 15px;
-    text-align: right;
+    width: 100%;
+    height: 600px;
   }
 
-  .HeadingForm {
+  .Heading-form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-left: 15px;
+    padding: 0 15px;
+    width: 100%;
   }
 
-  .HeadingTitle {
+  .Heading-formContent {
+    width: 100%;
+  }
+
+  .Heading-title {
     font-size: 36px;
     line-height: 46px;
   }
 
-  .Heading-description {
+  .Heading-desktopDescription {
     display: none;
   }
 
-  .Heading-Input-Mobile {
+  .Heading-mobileDescription {
     display: block;
-    font-family: "Inter";
     font-size: 20px;
     line-height: 30px;
-    margin-right: 15px;
     color: #585757;
+    margin-bottom: 30px;
   }
 
   .HeadingInputNameForm {
     display: flex;
     flex-direction: column;
-  }
-
-  .Heading-input {
-    margin-right: 15px;
   }
 
   .Heading-formInfo {
